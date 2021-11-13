@@ -1,36 +1,29 @@
 <template>
-    <view class="content">
-        <image class="logo" src="/static/logo.png"></image>
-        <view>
-            <text class="title">{{title}}</text>
-        </view>
-    </view>
+	<view class="care-box">
+		<view>
+			<text class="title">{{title}}</text>
+		</view>
+	</view>
 </template>
 
 <script>
-    export default {
-        setup() {
-            return {
-                title: 'hello'
-            }
-        }
-    }
+	export default {
+		setup() {
+			return {
+				title: 'hello world'
+			}
+		},
+		onLoad() {
+			let self = this;
+			console.log(self.$store.state.count);
+			self.$miniApp.setNavigationBarColor('#000000', '#2279ea');
+		},
+		
+		methods: {
+			
+		}
+	}
 </script>
+<style scoped>
 
-<style>
-    .content {
-        text-align: center;
-        height: 400upx;
-    }
-
-    .logo {
-        height: 200upx;
-        width: 200upx;
-        margin-top: 200upx;
-    }
-
-    .title {
-        font-size: 36upx;
-        color: #8f8f94;
-    }
 </style>

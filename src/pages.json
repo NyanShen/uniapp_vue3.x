@@ -3,14 +3,30 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "uni-app vue3"
+			}
+		},
+		{
+			"path": "pages/cardWays/index",
+			"style": {
+				"navigationBarTitleText": "添加/办理就诊卡"
 			}
 		}
 	],
 	"globalStyle": {
+		"backgroundTextStyle": "light",
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "uni-app vue3",
+		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式（list 的索引项）
+		"list": [
+			{
+				"name": "cardWays",
+				"path": "pages/cardWays/index"
+			}
+		]
 	}
 }
