@@ -5,12 +5,31 @@
 			"style": {
 				"navigationBarTitleText": "uni-app vue3"
 			}
-		},
+		}
+	],
+	"subPackages": [
 		{
-			"path": "pages/cardWays/index",
-			"style": {
-				"navigationBarTitleText": "添加/办理就诊卡"
-			}
+			"root": "pages/careVersion",
+			"pages": [
+				{
+					"path": "cardWays/index",
+					"style": {
+						"navigationBarTitleText": "添加/办理就诊卡"
+					}
+				},
+				{
+					"path": "cardScan/index",
+					"style": {
+						"navigationBarTitleText": "添加/办理就诊卡"
+					}
+				},
+				{
+					"path": "cardInput/index",
+					"style": {
+						"navigationBarTitleText": "添加/办理就诊卡"
+					}
+				}
+			]
 		}
 	],
 	"globalStyle": {
@@ -24,8 +43,16 @@
 		"current": 0, //当前激活的模式（list 的索引项）
 		"list": [
 			{
+				"name": "cardInput",
+				"path": "pages/careVersion/cardInput/index"
+			},
+			{
+				"name": "cardScan",
+				"path": "pages/careVersion/cardScan/index"
+			},
+			{
 				"name": "cardWays",
-				"path": "pages/cardWays/index"
+				"path": "pages/careVersion/cardWays/index"
 			}
 		]
 	}
